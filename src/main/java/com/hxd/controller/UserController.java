@@ -27,9 +27,13 @@ public class UserController {
         return userService.findById(id);
     }
 
-    @RequestMapping(value = {"index"})
+    @RequestMapping("index")
     public String index(){
         return "index";
     }
 
+    @RequestMapping("demo")
+    public String demo(){
+        return "demo";
+    }
 }
