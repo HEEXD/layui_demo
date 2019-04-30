@@ -5,6 +5,12 @@ spring:
     url: jdbc:mysql://localhost:3306/test
     username: root
     password: root
+  mvc:
+      view:
+        # 页面默认前缀目录
+        prefix: /WEB-INF/views/
+        # 响应页面默认后缀
+        suffix: .jsp
 
 # mybatis Configuration
 mybatis:
