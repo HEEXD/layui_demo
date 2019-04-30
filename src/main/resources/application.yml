@@ -1,0 +1,17 @@
+spring:
+  # DB Configuration
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+
+# mybatis Configuration
+mybatis:
+  mapper-locations: classpath:mapper/*Dao.xml
+  config-location: classpath:mybatis/SqlMapConfig.xml
+
+server:
+  port: 8080
+  servlet:
+    context-path: /layuidemo
