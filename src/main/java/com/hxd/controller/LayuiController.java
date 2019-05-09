@@ -29,4 +29,9 @@ public class LayuiController {
     public String form() {
         return "form";
     }
+
+    @RequestMapping("layer")
+    public String layer() {
+        return "layer";
+    }
 }

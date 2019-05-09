@@ -61,6 +61,13 @@
             <input type="radio" name="sex" value="女" title="女" checked>
         </div>
     </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">出生日期</label>
+        <div class="layui-inline">
+            <input type="text" class="layui-input" name="birthday" id="birthday">
+        </div>
+    </div>
+
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">文本域</label>
         <div class="layui-input-block">
@@ -77,8 +84,15 @@
 
 <script>
     //Demo
-    layui.use('form', function(){
-        var form = layui.form;
+    layui.use(['form','laydate'], function(){
+        var form = layui.form
+            ,laydate = layui.laydate;
+
+        //执行一个laydate实例
+        laydate.render({
+            elem: '#birthday' //指定元素
+            ,type: 'datetime'
+        });
 
         //监听提交
         form.on('submit(formDemo)', function(data){
