@@ -26,18 +26,4 @@ public class UserController {
         return userService.findById(id);
     }
 
-    @RequestMapping("index")
-    public String index(){
-        return "index";
-    }
-
-    @RequestMapping("demo")
-    public String demo(){
-        return "demo";
-    }
-
-    @RequestMapping("manage")
-    public String manage() {
-        return "manage";
-    }
 }
