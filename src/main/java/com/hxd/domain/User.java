@@ -9,6 +9,7 @@ public class User implements Serializable {
     private int id;
     private String username;
     private int age;
+    private String email;
 
     private Page page = new Page();
 
@@ -43,4 +44,12 @@ public class User implements Serializable {
     public void setPage(Page page) {
         this.page = page;
     }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }

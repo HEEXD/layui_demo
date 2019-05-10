@@ -39,4 +39,9 @@ public class LayuiController {
     public String table() {
         return "table";
     }
+
+    @RequestMapping("table_toolbar")
+    public String table_toolbar() {
+        return "table_toolbar";
+    }
 }

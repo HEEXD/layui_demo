@@ -32,12 +32,11 @@ public class UserController {
         JsonResult jr = new JsonResult();
         try {
             List<User> list = userService.findAllByPage(user);
-            int count = userService.findSum();
+            int count = userService.findSum(user);
             jr.setData(list);
             jr.setFlag("success");
             jr.setCount(count);//总记录数
             jr.setCode(0);
-
         }catch (Exception e) {
             e.printStackTrace();
             jr.setFlag("fail");

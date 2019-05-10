@@ -8,7 +8,7 @@ import java.io.Serializable;
 public class Page implements Serializable {
     private static final long serialVersionUID = -5788696920913204621L;
     private int pageStart = 0;
-    private int pageSize = 5;
+    private int pageSize = 10;
     private int pageNo = 1;
 
     public int getPageStart() {

@@ -13,10 +13,16 @@
 
     <select id="findSum" resultType="int">
         SELECT count(1) FROM user
+        <if test="id != 0">
+            WHERE id LIKE #{id}
+        </if>
     </select>
 
     <select id="findAllByPage" resultType="User">
         SELECT * FROM USER
+        <if test="id != 0">
+            WHERE id LIKE #{id}
+        </if>
         <if test="page != null">
             limit #{page.pageStart},#{page.pageSize}
         </if>
