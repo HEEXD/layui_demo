@@ -10,6 +10,8 @@ public class User implements Serializable {
     private String username;
     private int age;
 
+    private Page page = new Page();
+
     public int getId() {
         return id;
     }
@@ -32,5 +34,13 @@ public class User implements Serializable {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public Page getPage() {
+        return page;
+    }
+
+    public void setPage(Page page) {
+        this.page = page;
     }
 }

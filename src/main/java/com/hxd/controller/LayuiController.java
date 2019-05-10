@@ -34,4 +34,9 @@ public class LayuiController {
     public String layer() {
         return "layer";
     }
+
+    @RequestMapping("table")
+    public String table() {
+        return "table";
+    }
 }

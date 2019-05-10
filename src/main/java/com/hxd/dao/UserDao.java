@@ -13,4 +13,7 @@ public interface UserDao {
 
     List<User> findAll();
 
+    int findSum();
+
+    List<User> findAllByPage(User user);
 }

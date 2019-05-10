@@ -24,6 +24,16 @@ public class UserServiceImpl implements UserService {
         return userDao.findById(id);
     }
 
+    @Override
+    public int findSum() {
+        return userDao.findSum();
+    }
+
+    @Override
+    public List<User> findAllByPage(User user) {
+        user.getPage().setPageStart((user.getPage().getPageNo()-1)*user.getPage().getPageSize());
+        return userDao.findAllByPage(user);
+    }
 
 
 }

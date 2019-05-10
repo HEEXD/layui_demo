@@ -10,4 +10,7 @@ public interface UserService {
 
     User findById(int id);
 
+    int findSum();
+
+    List<User> findAllByPage(User user);
 }
