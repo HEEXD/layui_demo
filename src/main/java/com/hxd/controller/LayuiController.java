@@ -55,5 +55,8 @@ public class LayuiController {
         return "upload";
     }
 
-
+    @RequestMapping("banner")
+    public String banner() {
+        return "banner";
+    }
 }
