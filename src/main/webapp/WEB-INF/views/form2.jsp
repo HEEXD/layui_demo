@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>form2</title>
+    <title>form2_demo</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/layui/css/layui.css">
     <script type="text/javascript" src="${pageContext.request.contextPath}/layui/layui.js"></script>
 </head>

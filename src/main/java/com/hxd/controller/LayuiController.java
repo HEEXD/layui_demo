@@ -50,5 +50,10 @@ public class LayuiController {
         return "form2";
     }
 
+    @RequestMapping("upload")
+    public String upload() {
+        return "upload";
+    }
+
 
 }
