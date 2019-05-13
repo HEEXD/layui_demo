@@ -44,4 +44,11 @@ public class LayuiController {
     public String table_toolbar() {
         return "table_toolbar";
     }
+
+    @RequestMapping("form2")
+    public String form2() {
+        return "form2";
+    }
+
+
 }
